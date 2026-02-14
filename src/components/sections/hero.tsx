@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export function Hero() {
@@ -12,8 +13,11 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="mx-auto max-w-4xl space-y-4"
+                    className="mx-auto max-w-4xl space-y-4 flex flex-col items-center"
                 >
+                    <div className="mb-4">
+                        <Image src="/logo.png" alt="Synzephyr Technologies" width={240} height={70} className="h-20 w-auto" />
+                    </div>
                     <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 pb-2">
                         Digital Growth Solutions for Businesses in Pollachi & Coimbatore
                     </h1>

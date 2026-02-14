@@ -53,7 +53,7 @@ export default function RootLayout({
               "description": "Digital Growth Solutions for Businesses in Pollachi & Coimbatore. SEO, Digital Marketing, Graphic Design, and GMB Optimization.",
               "@id": "https://synzephyrtechnologies.web.app",
               "url": "https://synzephyrtechnologies.web.app",
-              "telephone": "+911234567890",
+              "telephone": "+919443449557",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Pollachi",

@@ -32,7 +32,7 @@ export default function ContactPage() {
                                     <Phone className="h-6 w-6 text-primary mr-4" />
                                     <div>
                                         <h3 className="font-semibold text-lg">Phone</h3>
-                                        <p className="text-muted-foreground">+91 12345 67890</p>
+                                        <p className="text-muted-foreground">+91 94434 49557</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center">

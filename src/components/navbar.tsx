@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation" // Added for active state
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -33,9 +34,7 @@ export function Navbar() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
-                        <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">
-                            Synzephyr
-                        </span>
+                        <Image src="/logo.png" alt="Synzephyr Technologies" width={140} height={35} className="h-8 w-auto" />
                     </Link>
 
                     {/* Desktop Menu */}

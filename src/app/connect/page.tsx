@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Globe, MapPin, MessageCircle } from "lucide-react"
+import Image from "next/image"
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Globe, MapPin, MessageCircle, Phone } from "lucide-react"
 
 export const metadata: Metadata = {
     title: "Connect with Synzephyr | Social Media Links",
@@ -10,44 +11,65 @@ export const metadata: Metadata = {
 const links = [
     {
         name: "Website",
-        url: "/",
+        url: "https://synzephyrtechnologies.web.app",
         icon: Globe,
         color: "bg-blue-500",
         textColor: "text-white"
     },
     {
+        name: "Google Business Profile",
+        url: "https://share.google/5oZQbss0Btyr12CNs",
+        icon: MapPin,
+        color: "bg-blue-400",
+        textColor: "text-white"
+    },
+    {
         name: "Instagram",
-        url: "#",
+        url: "https://www.instagram.com/synzephyr.tech",
         icon: Instagram,
         color: "bg-pink-600",
         textColor: "text-white"
     },
     {
         name: "Facebook",
-        url: "#",
+        url: "https://www.facebook.com/share/1cYS7ZipVY/",
         icon: Facebook,
         color: "bg-blue-700",
         textColor: "text-white"
     },
     {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/company/synzephyr/",
         icon: Linkedin,
         color: "bg-blue-800",
         textColor: "text-white"
     },
     {
-        name: "Twitter / X",
-        url: "#",
+        name: "X (Twitter)",
+        url: "https://x.com/synzephyr_tech",
         icon: Twitter,
         color: "bg-black dark:bg-zinc-800",
         textColor: "text-white"
     },
     {
+        name: "Reddit",
+        url: "https://www.reddit.com/user/SynzephyrTech",
+        icon: MessageCircle, // Using MessageCircle as placeholder for Reddit icon if not available, or import specific icon if possible. Lucide might not have Reddit.
+        color: "bg-orange-500",
+        textColor: "text-white"
+    },
+    {
         name: "WhatsApp Business",
-        url: "#",
+        url: "https://wa.me/919443449557",
         icon: MessageCircle,
         color: "bg-green-500",
+        textColor: "text-white"
+    },
+    {
+        name: "Call Us",
+        url: "tel:+919443449557",
+        icon: Phone,
+        color: "bg-indigo-600",
         textColor: "text-white"
     },
     {
@@ -57,21 +79,14 @@ const links = [
         color: "bg-red-500",
         textColor: "text-white"
     },
-    {
-        name: "Google Business Profile",
-        url: "#",
-        icon: MapPin,
-        color: "bg-blue-400",
-        textColor: "text-white"
-    },
 ]
 
 export default function ConnectPage() {
     return (
         <div className="flex flex-col min-h-screen items-center justify-center py-20 px-4 bg-muted/20">
             <div className="w-full max-w-md text-center">
-                <div className="h-24 w-24 bg-gradient-to-tr from-blue-600 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
-                    S
+                <div className="mx-auto mb-6 flex items-center justify-center">
+                    <Image src="/logo.png" alt="Synzephyr Technologies" width={140} height={40} className="h-auto w-auto rounded-xl shadow-lg" />
                 </div>
                 <h1 className="text-3xl font-extrabold tracking-tight mb-2">Synzephyr Technologies</h1>
                 <p className="text-muted-foreground mb-8">Digital Growth Agency | Pollachi & Coimbatore</p>
