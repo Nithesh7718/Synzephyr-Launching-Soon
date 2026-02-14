@@ -1,0 +1,95 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Synzephyr Technologies | Digital Growth Agency",
+  description: "Digital Growth Solutions for Businesses in Pollachi & Coimbatore. SEO, Digital Marketing, Graphic Design, and GMB Optimization.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground transition-colors duration-300`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Synzephyr Technologies",
+              "image": "https://synzephyrtechnologies.web.app/logo.png",
+              "description": "Digital Growth Solutions for Businesses in Pollachi & Coimbatore. SEO, Digital Marketing, Graphic Design, and GMB Optimization.",
+              "@id": "https://synzephyrtechnologies.web.app",
+              "url": "https://synzephyrtechnologies.web.app",
+              "telephone": "+911234567890",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Pollachi",
+                "addressLocality": "Pollachi",
+                "addressRegion": "TN",
+                "postalCode": "642001",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 10.6601,
+                "longitude": 77.0046
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.facebook.com/synzephyr",
+                "https://www.instagram.com/synzephyr",
+                "https://www.linkedin.com/company/synzephyr",
+                "https://twitter.com/synzephyr"
+              ]
+            }),
+          }}
+        />
+      </body>
+    </html>
+  );
+}
