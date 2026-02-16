@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
+  verification: {
+    google: "JBxZnbNTUf5G2DrRxX9wTMrLPp6EIE2ktdPFqqqUSP0",
+  },
   openGraph: {
     title: "Synzephyr Technologies | Digital Growth Agency",
     description: "Digital Growth Solutions for Businesses in Pollachi & Coimbatore. SEO, Digital Marketing, Graphic Design, and GMB Optimization.",
