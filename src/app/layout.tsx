@@ -18,6 +18,27 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Synzephyr Technologies | Digital Growth Agency",
   description: "Digital Growth Solutions for Businesses in Pollachi & Coimbatore. SEO, Digital Marketing, Graphic Design, and GMB Optimization.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
+  openGraph: {
+    title: "Synzephyr Technologies | Digital Growth Agency",
+    description: "Digital Growth Solutions for Businesses in Pollachi & Coimbatore. SEO, Digital Marketing, Graphic Design, and GMB Optimization.",
+    url: "https://synzephyrtechnologies.web.app",
+    siteName: "Synzephyr Technologies",
+    images: [
+      {
+        url: "https://synzephyrtechnologies.web.app/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Synzephyr Technologies Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
