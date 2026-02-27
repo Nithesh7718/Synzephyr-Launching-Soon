@@ -3,9 +3,13 @@ import Link from "next/link"
 import { Calendar, User } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Blog & Insights | Synzephyr Technologies",
-    description: "Stay updated with the latest trends in SEO, digital marketing, and web design. Expert insights for businesses in Pollachi & Coimbatore.",
+    title: "Digital Marketing Blog | SEO Tips for Pollachi & Coimbatore | Synzephyr",
+    description: "Read the latest digital marketing tips, SEO guides, and local business growth insights from Synzephyr Technologies — your digital marketing agency in Pollachi & Coimbatore.",
+    alternates: {
+        canonical: "https://synzephyrtechnologies.web.app/blog",
+    },
 }
+
 
 const posts = [
     {

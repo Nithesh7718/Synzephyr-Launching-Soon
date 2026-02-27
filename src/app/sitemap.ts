@@ -4,79 +4,92 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://synzephyrtechnologies.web.app'
+    const lastMod = new Date('2026-02-27')
 
     return [
         {
             url: baseUrl,
-            lastModified: new Date(),
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/services`,
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 0.95,
+        },
+        {
+            url: `${baseUrl}/seo-services-pollachi`,
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/seo-services-coimbatore`,
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/digital-marketing-pollachi`,
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/digital-marketing-coimbatore`,
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/google-business-profile-setup-pollachi`,
+            lastModified: lastMod,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/graphic-design-services-pollachi`,
+            lastModified: lastMod,
             changeFrequency: 'monthly',
-            priority: 1,
+            priority: 0.9,
         },
         {
             url: `${baseUrl}/about`,
-            lastModified: new Date(),
+            lastModified: lastMod,
             changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/services`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/seo-services-pollachi`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/seo-services-coimbatore`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/digital-marketing-pollachi`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/graphic-design-services-pollachi`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/google-business-profile-setup-pollachi`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
             url: `${baseUrl}/portfolio`,
-            lastModified: new Date(),
+            lastModified: lastMod,
             changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/blog`,
-            lastModified: new Date(),
+            lastModified: lastMod,
             changeFrequency: 'weekly',
-            priority: 0.7,
+            priority: 0.75,
         },
         {
             url: `${baseUrl}/contact`,
-            lastModified: new Date(),
+            lastModified: lastMod,
             changeFrequency: 'yearly',
-            priority: 0.5,
+            priority: 0.7,
         },
         {
             url: `${baseUrl}/connect`,
-            lastModified: new Date(),
+            lastModified: lastMod,
             changeFrequency: 'monthly',
             priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/privacy-policy`,
+            lastModified: lastMod,
+            changeFrequency: 'yearly',
+            priority: 0.3,
         },
     ]
 }

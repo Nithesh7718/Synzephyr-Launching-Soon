@@ -11,7 +11,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="flex items-center gap-2 mb-4">
-                            <Image src="/logo.png" alt="Synzephyr Technologies" width={160} height={45} className="h-10 w-auto" />
+                            <Image src="/logo.png" alt="Synzephyr Technologies – Digital Marketing Agency Pollachi" width={160} height={45} className="h-10 w-auto" loading="lazy" />
                             <span className="font-bold text-lg">Synzephyr Technologies</span>
                         </Link>
                         <p className="mt-4 text-sm text-muted-foreground">
@@ -42,12 +42,22 @@ export function Footer() {
                         <ul className="mt-4 space-y-2">
                             <li>
                                 <Link href="/seo-services-pollachi" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                                    SEO Services
+                                    SEO Services Pollachi
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/seo-services-coimbatore" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                                    SEO Services Coimbatore
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/digital-marketing-pollachi" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                                    Digital Marketing
+                                    Digital Marketing Pollachi
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/digital-marketing-coimbatore" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                                    Digital Marketing Coimbatore
                                 </Link>
                             </li>
                             <li>

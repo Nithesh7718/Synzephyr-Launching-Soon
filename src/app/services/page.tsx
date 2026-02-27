@@ -3,9 +3,13 @@ import Link from "next/link"
 import { Search, Globe, Palette, MapPin, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Our Services | Synzephyr Technologies",
-    description: "Explore our range of digital services including SEO, Digital Marketing, Graphic Design, and GMB Optimization in Pollachi & Coimbatore.",
+    title: "Digital Marketing Services in Pollachi & Coimbatore | Synzephyr",
+    description: "Explore Synzephyr's full range of digital marketing services in Pollachi & Coimbatore: SEO, social media marketing, graphic design, and Google Business Profile (GMB) optimization.",
+    alternates: {
+        canonical: "https://synzephyrtechnologies.web.app/services",
+    },
 }
+
 
 const services = [
     {
