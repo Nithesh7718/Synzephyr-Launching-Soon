@@ -21,7 +21,7 @@ const links = [
     },
     {
         name: "Google Business Profile",
-        url: "https://share.google/5oZQbss0Btyr12CNs",
+        url: "https://share.google/qzAusQ6g4QiP59MeV",
         icon: MapPin,
         color: "bg-blue-400",
         textColor: "text-white"

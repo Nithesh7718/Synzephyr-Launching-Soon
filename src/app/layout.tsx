@@ -125,7 +125,7 @@ export default function RootLayout({
               n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
               t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
               document,'script','https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init','YOUR_PIXEL_ID');
+              fbq('init','1808210129731692');
               fbq('track','PageView');
             `,
           }}
@@ -178,8 +178,30 @@ export default function RootLayout({
                 { "@type": "City", "name": "Pollachi" },
                 { "@type": "City", "name": "Coimbatore" },
                 { "@type": "City", "name": "Udumalpet" },
-                { "@type": "City", "name": "Tiruppur" },
-                { "@type": "State", "name": "Tamil Nadu" }
+                { "@type": "City", "name": "Tiruppur" }
+              ],
+              "sameAs": [
+                "https://share.google/qzAusQ6g4QiP59MeV",
+                "https://www.instagram.com/synzephyr.tech",
+                "https://www.facebook.com/share/1cYS7ZipVY/",
+                "https://www.linkedin.com/company/synzephyr/",
+                "https://x.com/synzephyr_tech",
+                "https://www.reddit.com/user/SynzephyrTech"
+              ],
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -191,19 +213,7 @@ export default function RootLayout({
                   { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Graphic Design Services Pollachi", "url": "https://synzephyrtechnologies.web.app/graphic-design-services-pollachi" } },
                   { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Business Profile Setup Pollachi", "url": "https://synzephyrtechnologies.web.app/google-business-profile-setup-pollachi" } }
                 ]
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                "opens": "09:00",
-                "closes": "18:00"
-              },
-              "sameAs": [
-                "https://www.facebook.com/share/1cYS7ZipVY/",
-                "https://www.instagram.com/synzephyr.tech",
-                "https://www.linkedin.com/company/synzephyr/",
-                "https://x.com/synzephyr_tech"
-              ]
+              }
             }),
           }}
         />
