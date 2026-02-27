@@ -6,6 +6,9 @@ import { Facebook, Instagram, Linkedin, Twitter, Mail, Globe, MapPin, MessageCir
 export const metadata: Metadata = {
     title: "Connect with Synzephyr | Social Media Links",
     description: "Follow Synzephyr Technologies on social media. Stay connected with the best digital marketing agency in Pollachi & Coimbatore.",
+    alternates: {
+        canonical: "https://synzephyrtechnologies.web.app/connect",
+    },
 }
 
 const links = [

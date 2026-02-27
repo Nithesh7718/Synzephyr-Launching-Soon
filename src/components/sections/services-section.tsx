@@ -6,25 +6,25 @@ import Link from "next/link"
 const services = [
     {
         title: "SEO Optimization",
-        description: "Rank higher on Google and attract local customers in Pollachi & Coimbatore with data-driven SEO strategies.",
+        description: "Dominate search results with our advanced SEO strategies. We focus on ranking your business specifically for high-intent keywords in Pollachi and Coimbatore, ensuring a consistent flow of organic traffic and local leads to your website.",
         icon: Search,
         href: "/seo-services-pollachi",
     },
     {
         title: "Digital Marketing",
-        description: "Comprehensive social media and ad campaigns to boost your brand visibility and engagement across platforms.",
+        description: "Reach your audience where they spend their time. Our comprehensive digital marketing service includes expert management of Facebook, Instagram, and Google Ads, specifically designed to increase brand awareness for businesses across Tamil Nadu.",
         icon: Globe,
         href: "/digital-marketing-pollachi",
     },
     {
         title: "Graphic Design",
-        description: "Stunning visuals and branding materials that capture your audience's attention and communicate your message.",
+        description: "Convert visitors into customers with professional visual storytelling. From premium logo design and brand identity to engaging social media creatives and high-quality print materials, we make your business stand out in the competitive Pollachi market.",
         icon: Palette,
         href: "/graphic-design-services-pollachi",
     },
     {
         title: "GMB Optimization",
-        description: "Optimize your Google Business Profile to dominate local search results and drive foot traffic to your store.",
+        description: "Be the first business customers see on Google Maps. We optimize your Google Business Profile (GMB) to rank in the Local 3-Pack, driving immediate phone calls, walk-in traffic, and trust from customers searching for local services in Pollachi.",
         icon: MapPin,
         href: "/google-business-profile-setup-pollachi",
     },

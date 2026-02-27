@@ -3,6 +3,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
     title: "Privacy Policy | Synzephyr Technologies",
     description: "Privacy Policy for Synzephyr Technologies usage.",
+    alternates: {
+        canonical: "https://synzephyrtechnologies.web.app/privacy-policy",
+    },
 }
 
 export default function PrivacyPolicyPage() {
@@ -54,7 +57,7 @@ export default function PrivacyPolicyPage() {
 
                     <h3>6. Contact Us</h3>
                     <p>
-                        If you have any questions about this Privacy Policy, please contact us at <a href="mailto:contact@synzephyr.web.app">contact@synzephyr.web.app</a>.
+                        If you have any questions about this Privacy Policy, please contact us at contact.synzephyr&#64;gmail&#46;com.
                     </p>
                 </div>
             </section>

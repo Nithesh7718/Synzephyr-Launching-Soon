@@ -5,6 +5,9 @@ import { ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
     title: "Our Portfolio | Synzephyr Technologies",
     description: "Check out our latest projects. We deliver high-quality websites, SEO results, and branding for businesses in Pollachi and Coimbatore.",
+    alternates: {
+        canonical: "https://synzephyrtechnologies.web.app/portfolio",
+    },
 }
 
 const projects = [

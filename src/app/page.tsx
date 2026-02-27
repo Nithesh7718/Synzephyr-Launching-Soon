@@ -68,6 +68,8 @@ const serviceAreas = [
   "Valparai", "Palladam", "Kinathukadavu", "Madukarai", "Sulur"
 ]
 
+import { LocalExpertise } from "@/components/sections/local-expertise"
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -78,6 +80,7 @@ export default function Home() {
 
       <Hero />
       <ServicesSection />
+      <LocalExpertise />
       <WhyChooseUs />
       <Process />
 
@@ -90,13 +93,16 @@ export default function Home() {
                 Pollachi&apos;s Trusted Digital Marketing Partner
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Synzephyr Technologies is a results-driven digital marketing agency headquartered in Pollachi, Tamil Nadu. We help small and medium businesses across Pollachi, Coimbatore, and the greater Tamil Nadu region build a powerful online presence, attract more local customers, and grow their revenue through data-backed digital strategies.
+                Synzephyr Technologies is a results-driven digital marketing agency headquartered in Pollachi, Tamil Nadu. We help small and medium businesses across Pollachi, Coimbatore, and the greater Tamil Nadu region build a powerful online presence, attract more local customers, and grow their revenue through data-backed digital strategies. Our approach is built on a foundation of transparency, technical excellence, and a deep understanding of the local Tamil Nadu market dynamics.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Founded with a mission to make world-class digital marketing accessible to local businesses, we understand the unique challenges and opportunities of the Pollachi and Coimbatore markets. Our team combines deep local knowledge with proven digital marketing expertise to deliver campaigns that generate real, measurable results — not just vanity metrics.
+                Founded with a mission to make world-class digital marketing accessible to local businesses, we understand the unique challenges and opportunities of the Pollachi and Coimbatore markets. Our team combines deep local knowledge with proven digital marketing expertise to deliver campaigns that generate real, measurable results — not just vanity metrics like likes or follows. We focus on what truly matters to your business: leads, conversions, and a positive return on investment (ROI).
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Whether you are a retailer, restaurant owner, doctor, contractor, or service provider in Pollachi, our customized digital marketing solutions are designed to connect you with customers exactly when they are searching for your services. From ranking your website on page 1 of Google through expert SEO, to managing your Google Business Profile (GMB) to dominate local map searches — Synzephyr Technologies is your end-to-end growth partner.
+                Whether you are a retailer, restaurant owner, doctor, contractor, or service provider in Pollachi, our customized digital marketing solutions are designed to connect you with customers exactly when they are searching for your services. From ranking your website on page 1 of Google through expert SEO, to managing your Google Business Profile (GMB) to dominate local map searches — Synzephyr Technologies is your end-to-end growth partner. We take the technical burden off your shoulders so you can focus on running your business.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                In today&apos;s digital-first world, your website and local map listing are often the first points of contact for potential customers. If your business isn&apos;t visible on Google in Pollachi or Coimbatore, you are losing revenue to competitors who are. We bridge that gap by implementing the latest SEO techniques, high-converting web designs, and strategic social media management that speaks directly to your local target audience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link href="/about" className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -109,12 +115,15 @@ export default function Home() {
             </div>
             <div className="space-y-5">
               <div className="bg-muted/40 rounded-2xl border border-border p-6 space-y-4">
-                <h3 className="text-xl font-bold">What We Do</h3>
+                <h3 className="text-xl font-bold">Comprehensive Growth Services</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  We provide a full-funnel digital marketing approach to ensure your business stays ahead of the curve in the Coimbatore district business ecosystem.
+                </p>
                 {[
-                  { label: "SEO Services", desc: "Rank higher on Google for keywords your customers search — locally in Pollachi and Coimbatore.", href: "/seo-services-pollachi" },
-                  { label: "Digital Marketing", desc: "Social media management, Facebook & Instagram Ads, Google Ads — all under one roof.", href: "/digital-marketing-pollachi" },
-                  { label: "GMB Optimization", desc: "Appear in Google Maps Local 3-Pack and drive calls & walk-ins from nearby customers.", href: "/google-business-profile-setup-pollachi" },
-                  { label: "Graphic Design", desc: "Professional logos, branding, social creatives and print materials that make you stand out.", href: "/graphic-design-services-pollachi" },
+                  { label: "Advanced SEO Hub", desc: "Rank #1 for high-volume keywords in Pollachi and Coimbatore search results.", href: "/seo-services-pollachi" },
+                  { label: "Strategic Digital Marketing", desc: "Targeted ads and social media management to skyrocket your brand awareness.", href: "/digital-marketing-pollachi" },
+                  { label: "GMB Power Optimization", desc: "Dominate the Local 3-Pack and drive massive phone calls and store visits.", href: "/google-business-profile-setup-pollachi" },
+                  { label: "Premium Graphic Design", desc: "Pro logos, brand kits, and marketing materials that build instant authority.", href: "/graphic-design-services-pollachi" },
                 ].map((s, i) => (
                   <Link key={i} href={s.href} className="flex items-start gap-3 group">
                     <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
@@ -127,8 +136,11 @@ export default function Home() {
               </div>
               <div className="bg-primary/5 rounded-2xl border border-primary/20 p-6">
                 <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-primary" /> Areas We Serve
+                  <MapPin className="h-5 w-5 text-primary" /> Regional Coverage
                 </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  While we are headquartered in Pollachi, our reach extends throughout the major business hubs of Coimbatore and the surrounding Tamil Nadu region.
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {serviceAreas.map(area => (
                     <span key={area} className="text-sm bg-background border border-border rounded-full px-3 py-1 text-muted-foreground">
@@ -137,7 +149,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-xs text-muted-foreground mt-3">
-                  Based in Pollachi · Serving all of Tamil Nadu &amp; beyond
+                  Based in Pollachi · Serving all of Tamil Nadu &amp; South India
                 </p>
               </div>
             </div>
@@ -149,31 +161,37 @@ export default function Home() {
       <section className="py-20 bg-muted/30" aria-labelledby="locations-heading">
         <div className="container px-4 md:px-6 mx-auto">
           <h2 id="locations-heading" className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-4">
-            Digital Marketing Services in Pollachi &amp; Coimbatore
+            Specialized Digital Marketing in Pollachi &amp; Coimbatore
           </h2>
           <p className="text-center text-muted-foreground text-lg mb-12 max-w-3xl mx-auto">
-            We are the local experts. Our region-specific knowledge gives our clients a decisive advantage over businesses using generic national agencies.
+            We are the local experts. Our region-specific knowledge gives our clients a decisive advantage over businesses using generic national agencies who don&apos;t understand the local nuances of Tamil Nadu.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-background rounded-2xl border border-border p-8 space-y-4 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold">Digital Marketing in Pollachi</h3>
+              <h3 className="text-2xl font-bold">Local Digital Agency in Pollachi</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Pollachi is a thriving agricultural and commercial hub in the Coimbatore district of Tamil Nadu. With a growing number of businesses going online, the competition for local digital visibility is intensifying rapidly. Synzephyr Technologies works with businesses across every industry in Pollachi — from retail stores and restaurants to clinics, coaching centres, and service providers — helping them outrank competitors on Google and attract a consistent stream of new customers.
+                Pollachi is a thriving agricultural and commercial hub in the Coimbatore district. With an increasing number of traditional businesses going digital, the competition for online visibility is intensifying. Synzephyr Technologies works with businesses across virtually every local industry — from major furniture retailers and organic farms to restaurants, medical clinics, and service professionals — helping them outrank competitors on Google Search and Maps.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our Pollachi-focused SEO strategies target high-intent local searches like &quot;best [service] in Pollachi&quot;, ensuring your business appears exactly when and where potential customers are looking. Combined with GMB optimization and targeted social media campaigns, we deliver a complete local digital marketing solution.
+                Our Pollachi-centric SEO strategies target high-intent local search queries like &quot;best restaurant in Pollachi&quot; or &quot;hardware shop in Pollachi&quot;, ensuring your business appears exactly when potential customers are ready to buy. We combine technical SEO, local content writing, and aggressive GMB optimization to make you the #1 choice in the area.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                By choosing a local agency like Synzephyr instead of a large firm in Bangalore or Mumbai, you benefit from consultants who actually know the local landscape, culture, and business environment. We are just a phone call or a short drive away from your office in Pollachi.
               </p>
               <Link href="/digital-marketing-pollachi" className="inline-flex items-center text-primary font-semibold hover:underline text-sm">
                 Digital Marketing in Pollachi <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
             <div className="bg-background rounded-2xl border border-border p-8 space-y-4 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold">Digital Marketing in Coimbatore</h3>
+              <h3 className="text-2xl font-bold">Strategic Marketing in Coimbatore</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Coimbatore — the &quot;Manchester of South India&quot; — is one of Tamil Nadu&apos;s most competitive business markets. With a sprawling industrial base, a thriving IT sector, and thousands of small businesses, ranking on Google in Coimbatore requires a sophisticated, data-driven approach. Synzephyr Technologies brings that expertise to Coimbatore businesses, helping them dominate both organic search and Google Maps across the city.
+                Coimbatore — often called the &quot;Manchester of South India&quot; — is one of the most competitive business markets in the country. With a massive industrial sector, a booming IT landscape, and thousands of SMEs, ranking on page 1 of Google in Coimbatore requires a professional, data-driven SEO approach. Synzephyr Technologies brings this high-level expertise to Coimbatore businesses, providing them with a clear path to dominate both organic search and local map listings.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                From RS Puram to Peelamedu, Gandhipuram to Singanallur — we build hyper-local SEO and digital marketing strategies that target your exact service area within Coimbatore. Our proven approach combines on-page SEO, technical optimization, local citation building, and GMB management to put you ahead of competitors.
+                From RS Puram to Gandhipuram, Peelamedu to Saravanampatti — we build hyper-local digital marketing strategies that target your specific service areas within the city. Our approach combines rigorous technical auditing, high-authority backlink building, and conversion-optimized web design to deliver results that impact your bottom line.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                We understand that Coimbatore businesses aren&apos;t just competing locally, but often nationally and globally. Our digital strategies are built to scale, ensuring that your brand is positioned as a leader in its industry, whether you are catering specifically to the Coimbatore market or expanding across South India.
               </p>
               <Link href="/digital-marketing-coimbatore" className="inline-flex items-center text-primary font-semibold hover:underline text-sm">
                 Digital Marketing in Coimbatore <ArrowRight className="ml-1 h-4 w-4" />

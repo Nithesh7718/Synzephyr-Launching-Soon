@@ -66,36 +66,59 @@ export default function DigitalMarketingPollachiPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
             <ServiceLayout
-                title="Digital Marketing Agency in Pollachi"
-                subtitle="Accelerate Your Growth with Targeted Digital Marketing Campaigns."
-                description="Connect with your audience where they spend their time. As the leading digital marketing agency in Pollachi, Synzephyr Technologies designs and executes campaigns that build brand awareness, engage your community, and drive direct sales. Whether it's viral social media content, precision-targeted Facebook Ads, or high-converting Google Ads, we have the strategy, tools, and expertise to deliver measurable results for your Pollachi-based business. We serve businesses across Pollachi, Udumalpet, Anaimalai, and the greater Coimbatore district."
+                title="Premier Digital Marketing Agency in Pollachi"
+                subtitle="Build a Powerful Online Presence and Scale Your Brand in the Pollachi Market."
+                description="In a rapidly evolving digital landscape, having a social media page isn't enough. You need a comprehensive strategy that connects your brand with the right people at the right time. At Synzephyr Technologies — Pollachi's top digital marketing firm — we specialize in creating data-backed campaigns that drive engagement, visibility, and sales. From expert social media management to precision-targeted advertising on Facebook, Instagram, and Google, we help Pollachi businesses of all sizes stand out and thrive online."
                 benefits={benefits}
             >
-                <div className="grid grid-cols-1 gap-6">
-                    <div className="flex items-center space-x-4 p-4 bg-background rounded-xl border border-border">
-                        <Megaphone className="h-8 w-8 text-red-500" />
-                        <div>
-                            <h3 className="font-bold">Brand Awareness in Pollachi</h3>
-                            <p className="text-sm text-muted-foreground">Make your brand a household name across Pollachi and surrounding areas.</p>
+                <div className="space-y-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="flex flex-col p-6 bg-background rounded-2xl border border-border shadow-sm hover:border-primary/50 transition-colors">
+                            <Megaphone className="h-10 w-10 text-red-500 mb-4" />
+                            <h3 className="font-bold text-lg mb-2">Social Awareness</h3>
+                            <p className="text-sm text-muted-foreground">We help your business in Pollachi become a household name through viral content and consistent social media presence across Major platforms.</p>
+                        </div>
+                        <div className="flex flex-col p-6 bg-background rounded-2xl border border-border shadow-sm hover:border-primary/50 transition-colors">
+                            <MessageCircle className="h-10 w-10 text-blue-400 mb-4" />
+                            <h3 className="font-bold text-lg mb-2">Organic Engagement</h3>
+                            <p className="text-sm text-muted-foreground">Build a loyal community of customers who truly care about your brand. We manage your comments, reviews, and messages to build trust in Pollachi.</p>
+                        </div>
+                        <div className="flex flex-col p-6 bg-background rounded-2xl border border-border shadow-sm hover:border-primary/50 transition-colors">
+                            <MousePointerClick className="h-10 w-10 text-green-500 mb-4" />
+                            <h3 className="font-bold text-lg mb-2">High-ROI Paid Ads</h3>
+                            <p className="text-sm text-muted-foreground">Stop wasting money on 'boosted' posts. Our professional ad campaigns focus on conversions, delivering a healthy return on your advertising spend.</p>
                         </div>
                     </div>
-                    <div className="flex items-center space-x-4 p-4 bg-background rounded-xl border border-border">
-                        <MessageCircle className="h-8 w-8 text-blue-400" />
-                        <div>
-                            <h3 className="font-bold">Customer Engagement</h3>
-                            <p className="text-sm text-muted-foreground">Build lasting relationships with your local audience through compelling content.</p>
+
+                    <div className="prose dark:prose-invert max-w-none">
+                        <h2 className="text-2xl font-bold">Comprehensive Marketing Strategy for Tamil Nadu Businesses</h2>
+                        <p className="text-muted-foreground">
+                            Our approach to digital marketing in Pollachi goes beyond simple posts. We analyze your customer journey from the first impression to the final sale.
+                        </p>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-lg text-primary">Strategic Social Media Management</h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                    We handle your Meta (Facebook & Instagram), LinkedIn, and even regional platforms to ensure your brand voice is consistent and professional. Our content calendars are designed to stay ahead of local Pollachi events and festivals, ensuring your business stays top-of-mind for local shoppers.
+                                </p>
+                            </div>
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-lg text-primary">Precision-Targeted Paid Advertising</h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                    We specialize in hyper-local targeting. Whether you want to reach people within a 10km radius of your shop in Pollachi or expand your reach across the Coimbatore district, we optimize every rupee of your budget for the best possible visibility and lead volume.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex items-center space-x-4 p-4 bg-background rounded-xl border border-border">
-                        <MousePointerClick className="h-8 w-8 text-green-500" />
-                        <div>
-                            <h3 className="font-bold">Instant Traffic & Leads</h3>
-                            <p className="text-sm text-muted-foreground">Get immediate visibility and inquiries with targeted paid ad campaigns.</p>
-                        </div>
-                    </div>
-                    <section className="p-4 bg-primary/5 rounded-xl border border-primary/20">
-                        <h2 className="font-bold text-lg mb-2">Local Market Expertise</h2>
-                        <p className="text-sm text-muted-foreground">We understand the Pollachi market — the festivals, the local culture, the Tamil-speaking audience. This local knowledge helps us craft campaigns that truly resonate and convert.</p>
+
+                    <section className="p-8 bg-primary/5 rounded-3xl border border-primary/20">
+                        <h2 className="text-xl font-bold mb-4">Why Local Expertise Matters</h2>
+                        <p className="text-muted-foreground leading-relaxed mb-4">
+                            We aren't just an agency; we are residents of the Pollachi and Coimbatore area. We understand the local festivals (like Pollachi Jallikattu or temple festivals), the regional dialect, and the specific needs of the local Tamil population. This cultural intelligence allows us to write copy and design graphics that resonate far more deeply than anything produced by a distant city agency.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed">
+                            When you choose Synzephyr Technologies, you are choosing a partner that is invested in the economic growth of the Pollachi region. We are committed to helping local retailers, schools, hospitals, and real estate firms dominate the digital space.
+                        </p>
                     </section>
                 </div>
             </ServiceLayout>
