@@ -16,7 +16,7 @@ export function Hero() {
                     className="mx-auto max-w-4xl space-y-4 flex flex-col items-center"
                 >
                     <div className="mb-4">
-                        <Image src="/logo.png" alt="Synzephyr Technologies" width={240} height={70} className="h-20 w-auto" />
+                        <Image src="/logo.png" alt="Synzephyr Technologies" width={300} height={90} className="h-28 md:h-36 w-auto" />
                     </div>
                     <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 pb-2">
                         Digital Growth Solutions for Businesses in Pollachi & Coimbatore

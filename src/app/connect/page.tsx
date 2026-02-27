@@ -74,7 +74,7 @@ const links = [
     },
     {
         name: "Email Us",
-        url: "mailto:contact@synzephyr.web.app",
+        url: "mailto:contact.synzephyr@gmail.com",
         icon: Mail,
         color: "bg-red-500",
         textColor: "text-white"
@@ -84,14 +84,14 @@ const links = [
 export default function ConnectPage() {
     return (
         <div className="flex flex-col min-h-screen items-center justify-center py-20 px-4 bg-muted/20">
-            <div className="w-full max-w-md text-center">
+            <div className="w-full max-w-4xl text-center">
                 <div className="mx-auto mb-6 flex items-center justify-center">
-                    <Image src="/logo.png" alt="Synzephyr Technologies" width={140} height={40} className="h-auto w-auto rounded-xl shadow-lg" />
+                    <Image src="/logo.png" alt="Synzephyr Technologies" width={270} height={70} className="h-40 w-auto rounded-xl shadow-lg" />
                 </div>
                 <h1 className="text-3xl font-extrabold tracking-tight mb-2">Synzephyr Technologies</h1>
                 <p className="text-muted-foreground mb-8">Digital Growth Agency | Pollachi & Coimbatore</p>
 
-                <div className="space-y-4">
+                <div className="space-y-4 max-w-md mx-auto">
                     {links.map((link, index) => (
                         <Link
                             key={index}

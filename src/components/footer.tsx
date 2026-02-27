@@ -2,14 +2,17 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react"
 
+
+
 export function Footer() {
     return (
         <footer className="bg-muted/50 border-t border-border">
             <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div className="col-span-1 md:col-span-1">
-                        <Link href="/" className="block mb-4">
+                        <Link href="/" className="flex items-center gap-2 mb-4">
                             <Image src="/logo.png" alt="Synzephyr Technologies" width={160} height={45} className="h-10 w-auto" />
+                            <span className="font-bold text-lg">Synzephyr Technologies</span>
                         </Link>
                         <p className="mt-4 text-sm text-muted-foreground">
                             Empowering businesses in Pollachi & Coimbatore with cutting-edge digital growth solutions.
@@ -97,17 +100,21 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <Phone className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
-                                <span className="text-sm text-muted-foreground">+91 94434 49557</span>
+                                <a href="tel:+919443449557" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                                    +91 94434 49557
+                                </a>
                             </li>
                             <li className="flex items-center">
                                 <Mail className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
-                                <a href="mailto:contact@synzephyr.web.app" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                                    contact@synzephyr.web.app
+                                <a href="mailto:contact.synzephyr@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                                    contact.synzephyr@gmail.com
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+
 
                 <div className="mt-12 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-sm text-muted-foreground">

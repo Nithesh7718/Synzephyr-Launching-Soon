@@ -35,6 +35,7 @@ export function Navbar() {
                 <div className="flex h-16 items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
                         <Image src="/logo.png" alt="Synzephyr Technologies" width={140} height={35} className="h-8 w-auto" />
+                        <span className="font-bold text-sm sm:text-lg">Synzephyr Technologies</span>
                     </Link>
 
                     {/* Desktop Menu */}
