@@ -36,9 +36,10 @@ export const metadata: Metadata = {
     "graphic design Pollachi",
     "local SEO Tamil Nadu",
   ],
-  alternates: {
-    canonical: "https://synzephyrtechnologies.web.app",
-  },
+  // Note: canonical is intentionally NOT set at layout level.
+  // Each individual page sets its own correct canonical URL via alternates.canonical.
+  // A layout-level canonical would be inherited by all pages, pointing them all to the
+  // homepage — which is incorrect and the exact issue SEO tools flag.
   robots: {
     index: true,
     follow: true,
