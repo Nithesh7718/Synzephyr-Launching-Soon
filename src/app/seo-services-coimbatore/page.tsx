@@ -3,7 +3,7 @@ import { ServiceLayout } from "@/components/service-layout"
 import { Globe, Users, Trophy } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "SEO Services in Coimbatore | Top Rated SEO Agency | Synzephyr",
+    title: "SEO Services in Coimbatore | Top SEO Agency | Synzephyr",
     description: "Grow your business in Coimbatore with Synzephyr's advanced SEO services. Proven track record of ranking local & e-commerce businesses on page 1 of Google. Get a free SEO audit today!",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/seo-services-coimbatore",

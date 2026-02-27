@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Users, Target, Rocket } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "About Us | Digital Marketing Agency in Pollachi | Synzephyr Technologies",
+    title: "About Us | Digital Marketing Agency Pollachi | Synzephyr",
     description: "Synzephyr Technologies is a Pollachi-based digital marketing agency helping businesses across Pollachi, Coimbatore & Tamil Nadu grow online through SEO, GMB, and social media marketing.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/about",

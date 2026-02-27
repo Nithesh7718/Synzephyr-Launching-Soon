@@ -3,7 +3,7 @@ import { ServiceLayout } from "@/components/service-layout"
 import { PenTool, Image as ImageIcon, Layers } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Graphic Design Services in Pollachi | Logo & Branding | Synzephyr",
+    title: "Graphic Design Services Pollachi | Logo | Synzephyr",
     description: "Professional graphic design services in Pollachi. Custom logo design, brand identity, social media creatives, brochures & packaging by Synzephyr Technologies. Make your brand unforgettable.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/graphic-design-services-pollachi",

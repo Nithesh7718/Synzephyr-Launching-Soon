@@ -6,14 +6,14 @@ import { Process } from "@/components/sections/process"
 import { CTA } from "@/components/sections/cta"
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency in Pollachi & Coimbatore | Synzephyr Technologies",
+  title: "Digital Marketing Agency in Pollachi | Synzephyr",
   description: "Synzephyr Technologies – Pollachi's #1 digital marketing agency. We offer SEO, Google Business Profile (GMB) optimization, social media marketing & graphic design. Get a free consultation today!",
   alternates: {
     canonical: "https://synzephyrtechnologies.web.app",
   },
   openGraph: {
-    title: "Digital Marketing Agency in Pollachi & Coimbatore | Synzephyr Technologies",
-    description: "Synzephyr Technologies – Pollachi's #1 digital marketing agency. We offer SEO, GMB optimization, social media marketing & graphic design.",
+    title: "Digital Marketing Agency in Pollachi | Synzephyr",
+    description: "Synzephyr Technologies – Pollachi's #1 digital marketing agency. SEO, GMB optimization, social media marketing & graphic design.",
     url: "https://synzephyrtechnologies.web.app",
   },
 }

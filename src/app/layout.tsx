@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://synzephyrtechnologies.web.app"),
   title: {
-    default: "Synzephyr Technologies | #1 Digital Marketing Agency in Pollachi & Coimbatore",
+    default: "Synzephyr Technologies | Digital Marketing Pollachi",
     template: "%s | Synzephyr Technologies",
   },
   description: "Synzephyr Technologies is the leading digital marketing agency in Pollachi & Coimbatore. Expert SEO services, GMB optimization, social media marketing & graphic design to grow your local business.",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.webp",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
   },
   verification: {
     google: "JBxZnbNTUf5G2DrRxX9wTMrLPp6EIE2ktdPFqqqUSP0",
@@ -86,8 +86,6 @@ export const metadata: Metadata = {
 
 
 
-// ... existing imports
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -95,6 +93,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Resource hints — establish early connections to critical third-party origins */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        {/* Preload LCP image — the hero logo is the first visible branded element */}
+        <link
+          rel="preload"
+          as="image"
+          href="/logo.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
+      </head>
       <GoogleTagManager gtmId="GTM-MGN73MG5" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground transition-colors duration-300`}

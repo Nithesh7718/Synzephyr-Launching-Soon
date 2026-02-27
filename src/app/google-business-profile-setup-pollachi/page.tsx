@@ -3,7 +3,7 @@ import { ServiceLayout } from "@/components/service-layout"
 import { MapPin, Star, PhoneCall } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "GMB Optimization Pollachi | Google Business Profile Setup | Synzephyr",
+    title: "GMB Optimization Pollachi | Google Business Profile",
     description: "Expert Google Business Profile (GMB) setup & optimization in Pollachi. Appear in Google Maps local pack, get more calls & walk-ins from nearby customers. Trusted by local businesses.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/google-business-profile-setup-pollachi",

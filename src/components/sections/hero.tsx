@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export function Hero() {
@@ -16,10 +15,32 @@ export function Hero() {
                     className="mx-auto max-w-4xl space-y-4 flex flex-col items-center"
                 >
                     <div className="mb-4">
-                        <Image src="/logo.png" alt="Synzephyr Technologies – Digital Marketing Agency in Pollachi" width={300} height={90} className="h-28 md:h-36 w-auto" priority />
+                        {/* 
+                          <picture> serves the smallest applicable WebP to each device.
+                          PNG is the fallback for older browsers that don't support WebP.
+                          fetchpriority="high" + eager loading = no LCP delay.
+                        */}
+                        <picture>
+                            <source
+                                srcSet="/logo-300.webp 300w, /logo-640.webp 640w, /logo.webp 1280w"
+                                sizes="(max-width: 640px) 120px, (max-width: 1024px) 144px, 144px"
+                                type="image/webp"
+                            />
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/logo.png"
+                                alt="Synzephyr Technologies – Digital Marketing Agency in Pollachi"
+                                width={300}
+                                height={300}
+                                className="h-28 md:h-36 w-auto"
+                                fetchPriority="high"
+                                loading="eager"
+                                decoding="async"
+                            />
+                        </picture>
                     </div>
                     <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 pb-2">
-                        Digital Growth Solutions for Businesses in Pollachi & Coimbatore
+                        Digital Growth Solutions for Businesses in Pollachi &amp; Coimbatore
                     </h1>
                     <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                         Elevate your brand with data-driven SEO, cutting-edge web design, and strategic digital marketing tailored for the Tamil Nadu market.
@@ -48,7 +69,7 @@ export function Hero() {
             </div>
 
             {/* Background Elements */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 blur-[100px] rounded-full pointer-events-none dark:bg-blue-500/10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 blur-[100px] rounded-full pointer-events-none dark:bg-blue-500/10" aria-hidden="true" />
         </section>
     )
 }

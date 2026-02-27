@@ -3,7 +3,7 @@ import { ServiceLayout } from "@/components/service-layout"
 import { Megaphone, MessageCircle, MousePointerClick } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Digital Marketing Agency in Pollachi | Social Media & PPC | Synzephyr",
+    title: "Digital Marketing Agency in Pollachi | Synzephyr",
     description: "Synzephyr Technologies is the leading digital marketing agency in Pollachi. We offer social media management, Facebook & Instagram ads, Google Ads, and content marketing to grow your business.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/digital-marketing-pollachi",
