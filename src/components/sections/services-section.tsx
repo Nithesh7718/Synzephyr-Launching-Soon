@@ -1,13 +1,12 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Search, Globe, Palette, MapPin } from "lucide-react"
 import Link from "next/link"
 
 const services = [
     {
         title: "SEO Optimization",
-        description: "Rank higher on Google and attract local customers in Pollachi & Coimbatore with our data-driven SEO strategies.",
+        description: "Rank higher on Google and attract local customers in Pollachi & Coimbatore with data-driven SEO strategies.",
         icon: Search,
         href: "/seo-services-pollachi",
     },
@@ -19,7 +18,7 @@ const services = [
     },
     {
         title: "Graphic Design",
-        description: "Stunning visuals and branding materials that capture your audience's attention and communicate your message effectively.",
+        description: "Stunning visuals and branding materials that capture your audience's attention and communicate your message.",
         icon: Palette,
         href: "/graphic-design-services-pollachi",
     },
@@ -43,13 +42,9 @@ export function ServicesSection() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className="group relative p-6 bg-background rounded-2xl shadow-sm border border-border hover:shadow-md transition-shadow"
+                            className={`group relative p-6 bg-background rounded-2xl shadow-sm border border-border hover:shadow-md transition-shadow animate-fade-in-up delay-${(index + 1) * 100}`}
                         >
                             <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                                 <service.icon className="h-6 w-6 text-primary" />
@@ -62,7 +57,7 @@ export function ServicesSection() {
                             >
                                 Learn more
                             </Link>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

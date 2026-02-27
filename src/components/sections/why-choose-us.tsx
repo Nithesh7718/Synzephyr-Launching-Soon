@@ -1,7 +1,6 @@
 "use client"
 
 import { CheckCircle2 } from "lucide-react"
-import { motion } from "framer-motion"
 
 const reasons = [
     {
@@ -47,20 +46,16 @@ export function WhyChooseUs() {
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {reasons.map((reason, index) => (
-                                <motion.div
+                                <div
                                     key={index}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    viewport={{ once: true }}
-                                    className="flex items-start space-x-3"
+                                    className={`flex items-start space-x-3 animate-fade-in-up delay-${(index + 1) * 100}`}
                                 >
                                     <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
                                     <div>
                                         <span className="font-semibold block">{reason.title}</span>
                                         <span className="text-sm text-muted-foreground">{reason.desc}</span>
                                     </div>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -72,7 +67,7 @@ export function WhyChooseUs() {
                                 At Synzephyr Technologies, we believe that every business in Pollachi, Coimbatore, and across Tamil Nadu deserves access to high-quality, affordable digital marketing that drives genuine growth. We are committed to building long-term partnerships — not just completing one-off projects.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Your growth is our success. That&apos;s why we focus on results that matter — more phone calls, more website visits, more walk-in customers, and ultimately more revenue for your business. We measure our performance by the growth you experience, not by the number of social media posts we publish.
+                                Your growth is our success. That&apos;s why we focus on results that matter — more phone calls, more website visits, more walk-in customers, and ultimately more revenue for your business.
                             </p>
                             <div className="grid grid-cols-3 gap-4 pt-2 border-t border-border">
                                 {[

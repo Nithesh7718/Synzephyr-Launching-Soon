@@ -40,7 +40,18 @@ export function ContactPageClient() {
                                     <Mail className="h-6 w-6 text-primary mr-4" />
                                     <div>
                                         <h3 className="font-semibold text-lg">Email</h3>
-                                        <a href="mailto:contact.synzephyr@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">contact.synzephyr@gmail.com</a>
+                                        {/* Email obfuscated: assembled at runtime to prevent scraper harvesting */}
+                                        <button
+                                            onClick={() => {
+                                                const u = "contact.synzephyr";
+                                                const d = "gmail.com";
+                                                window.location.href = `mailto:${u}@${d}`;
+                                            }}
+                                            className="text-muted-foreground hover:text-primary transition-colors text-left"
+                                            aria-label="Send us an email"
+                                        >
+                                            contact.synzephyr&#64;gmail&#46;com
+                                        </button>
                                     </div>
                                 </div>
                             </div>

@@ -23,23 +23,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   /* Navy Accents for Light Mode */
-  --primary: #0f172a; /* Slate 900 */
+  --primary: #0f172a;
+  /* Slate 900 */
   --primary-foreground: #ffffff;
-  
-  --secondary: #e2e8f0; /* Slate 200 */
+
+  --secondary: #e2e8f0;
+  /* Slate 200 */
   --secondary-foreground: #0f172a;
-  
-  --muted: #f1f5f9; /* Slate 100 */
-  --muted-foreground: #64748b; /* Slate 500 */
-  
-  --accent: #f8fafc; /* Slate 50 */
+
+  --muted: #f1f5f9;
+  /* Slate 100 */
+  --muted-foreground: #64748b;
+  /* Slate 500 */
+
+  --accent: #f8fafc;
+  /* Slate 50 */
   --accent-foreground: #0f172a;
-  
+
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  
+
   --border: #e2e8f0;
   --input: #e2e8f0;
   --ring: #0f172a;
@@ -47,25 +52,29 @@
 }
 
 .dark {
-  --background: #0a0a0a; /* Deep Charcoal */
+  --background: #0a0a0a;
+  /* Deep Charcoal */
   --foreground: #ededed;
-  
+
   /* Electric Blue Accents for Dark Mode */
-  --primary: #3b82f6; /* Blue 500 */
+  --primary: #3b82f6;
+  /* Blue 500 */
   --primary-foreground: #ffffff;
-  
-  --secondary: #1e293b; /* Slate 800 */
+
+  --secondary: #1e293b;
+  /* Slate 800 */
   --secondary-foreground: #ededed;
-  
+
   --muted: #1e293b;
-  --muted-foreground: #94a3b8; /* Slate 400 */
-  
+  --muted-foreground: #94a3b8;
+  /* Slate 400 */
+
   --accent: #1e293b;
   --accent-foreground: #ededed;
-  
+
   --destructive: #7f1d1d;
   --destructive-foreground: #ededed;
-  
+
   --border: #1e293b;
   --input: #1e293b;
   --ring: #3b82f6;
@@ -99,4 +108,45 @@ body {
 /* Glow effects */
 .glow-text {
   text-shadow: 0 0 10px var(--primary);
+}
+
+/* Fade-in-up animation — replaces Framer Motion for section cards */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out;
+}
+
+/* Named stagger delays — eliminates all inline style={{ animationDelay }} */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up {
+    animation: none;
+  }
 }

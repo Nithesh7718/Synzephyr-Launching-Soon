@@ -1,0 +1,69 @@
+
+> synzephyr-launching-soon@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Turbopack build encountered 2 warnings:
+[next]/internal/font/google/4fa387ec64143e14-s.woff2
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.gstatic.com/s/geistmono/v4/or3nQ6H-1_WfwkMZI_qYFrMdmhHkjkotbA.woff2
+
+
+[next]/internal/font/google/bbc41e54d2fcbd21-s.woff2
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.gstatic.com/s/geistmono/v4/or3nQ6H-1_WfwkMZI_qYFrkdmhHkjkotbA.woff2
+
+
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+[next]/internal/font/google/geist_mono_8d43a2aa.module.css:8:9
+Module not found: Can't resolve '@vercel/turbopack-next/internal/font/google/font'
+   6 |   font-display: swap;
+   7 |   src: url(@vercel/turbopack-next/internal/font/google/font?{%22url%22:%22https://fonts.gstatic.com/s/geistmono/v4/or3nQ6H-1_WfwkMZI_qYFrMdmhHkjkotbA.woff2%22,%22preload%22:false,%22has_size_adjust%22:true}) format('woff2');
+>  8 |   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+     |         ^
+   9 | }
+  10 | /* latin-ext */
+  11 | @font-face {
+
+Import map: Resolved by import map
+
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+    [next]/internal/font/google/geist_mono_8d43a2aa.js
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[next]/internal/font/google/geist_mono_8d43a2aa.module.css:17:9
+Module not found: Can't resolve '@vercel/turbopack-next/internal/font/google/font'
+  15 |   font-display: swap;
+  16 |   src: url(@vercel/turbopack-next/internal/font/google/font?{%22url%22:%22https://fonts.gstatic.com/s/geistmono/v4/or3nQ6H-1_WfwkMZI_qYFrkdmhHkjkotbA.woff2%22,%22preload%22:false,%22has_size_adjust%22:true}) format('woff2');
+> 17 |   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+     |         ^
+  18 | }
+  19 | /* latin */
+  20 | @font-face {
+
+Import map: Resolved by import map
+
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+    [next]/internal/font/google/geist_mono_8d43a2aa.js
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> ([next]/internal/font/google/geist_mono_8d43a2aa.module.css:8:9)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/geist_mono_8d43a2aa.module.css:17:9)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

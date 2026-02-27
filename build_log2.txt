@@ -1,0 +1,21 @@
+
+> synzephyr-launching-soon@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.7s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/19) ...
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Event handlers cannot be passed to Client Component props.
+  {href: "#email", onClick: function onClick, className: ..., aria-label: ..., children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '25433448'
+}
+Export encountered an error on /_not-found/page: /_not-found, exiting the build.
+Γ¿» Next.js build worker exited with code: 1 and signal: null

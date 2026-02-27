@@ -1,8 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react"
-
-
 
 export function Footer() {
     return (
@@ -103,10 +103,11 @@ export function Footer() {
                         <h3 className="text-sm font-semibold tracking-wider uppercase text-foreground">Contact</h3>
                         <ul className="mt-4 space-y-2">
                             <li className="flex items-start">
-                                <MapPin className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
-                                <span className="text-sm text-muted-foreground">
-                                    Serving Pollachi, Coimbatore & Tamil Nadu, India
-                                </span>
+                                <MapPin className="h-5 w-5 text-muted-foreground mr-2 shrink-0 mt-0.5" />
+                                <address className="text-sm text-muted-foreground not-italic">
+                                    Pollachi, Coimbatore District,<br />
+                                    Tamil Nadu – 642001, India
+                                </address>
                             </li>
                             <li className="flex items-center">
                                 <Phone className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
@@ -116,8 +117,14 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <Mail className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
-                                <a href="mailto:contact.synzephyr@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                                    contact.synzephyr@gmail.com
+                                {/* Email obfuscated via HTML entities to deter scrapers */}
+                                <a
+                                    href="#email"
+                                    onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "contact.synzephyr" + "@" + "gmail.com"; }}
+                                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                                    aria-label="Email Synzephyr Technologies"
+                                >
+                                    contact.synzephyr&#64;gmail&#46;com
                                 </a>
                             </li>
                         </ul>

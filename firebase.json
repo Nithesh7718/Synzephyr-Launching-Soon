@@ -10,18 +10,6 @@
       ],
       "cleanUrls": true,
       "trailingSlash": false,
-      "redirects": [
-        {
-          "source": "http://synzephyrtechnologies.web.app/**",
-          "destination": "https://synzephyrtechnologies.web.app/:splat",
-          "type": 301
-        },
-        {
-          "source": "http://www.synzephyrtechnologies.com/**",
-          "destination": "https://synzephyrtechnologies.com/:splat",
-          "type": 301
-        }
-      ],
       "headers": [
         {
           "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|ico|avif)",
@@ -37,7 +25,7 @@
           ]
         },
         {
-          "source": "**/*.@(js|jsx|ts|tsx|css|woff|woff2|ttf|otf|eot)",
+          "source": "**/*.@(js|css|woff|woff2|ttf|otf|eot)",
           "headers": [
             {
               "key": "Cache-Control",
