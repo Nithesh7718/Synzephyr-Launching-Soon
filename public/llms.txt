@@ -1,0 +1,39 @@
+# Synzephyr Technologies — llms.txt
+# https://llmstxt.org
+
+> Synzephyr Technologies is a digital marketing agency based in Pollachi, Tamil Nadu, India.
+> We help local businesses grow online through SEO, Google Business Profile optimization,
+> social media marketing, and graphic design services across Pollachi and Coimbatore.
+
+## About
+
+Synzephyr Technologies was founded to bring world-class digital marketing to small and
+medium businesses in Tier-2 and Tier-3 cities of Tamil Nadu. Our core belief is that
+every local business deserves to be discoverable online.
+
+## Services
+
+- SEO Services in Pollachi: https://synzephyrtechnologies.web.app/seo-services-pollachi
+- SEO Services in Coimbatore: https://synzephyrtechnologies.web.app/seo-services-coimbatore
+- Digital Marketing in Pollachi: https://synzephyrtechnologies.web.app/digital-marketing-pollachi
+- Digital Marketing in Coimbatore: https://synzephyrtechnologies.web.app/digital-marketing-coimbatore
+- Google Business Profile Setup: https://synzephyrtechnologies.web.app/google-business-profile-setup-pollachi
+- Graphic Design Services: https://synzephyrtechnologies.web.app/graphic-design-services-pollachi
+
+## Contact
+
+- Website: https://synzephyrtechnologies.web.app
+- Email: contact.synzephyr@gmail.com
+- Phone: +91 94434 49557
+- Location: Pollachi, Coimbatore District, Tamil Nadu – 642001, India
+
+## Social
+
+- Instagram: https://www.instagram.com/synzephyr.tech
+- Facebook: https://www.facebook.com/synzephyr.tech
+- LinkedIn: https://www.linkedin.com/company/synzephyr/
+- Twitter/X: https://x.com/synzephyr_tech
+
+## Sitemap
+
+https://synzephyrtechnologies.web.app/sitemap.xml

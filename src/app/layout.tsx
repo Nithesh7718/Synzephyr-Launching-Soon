@@ -66,9 +66,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.webp",
-    shortcut: "/logo.webp",
-    apple: "/logo.webp",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   verification: {
     google: "JBxZnbNTUf5G2DrRxX9wTMrLPp6EIE2ktdPFqqqUSP0",

@@ -3,7 +3,7 @@ import { ServiceLayout } from "@/components/service-layout"
 import { BarChart, Search, TrendingUp } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "SEO Services in Pollachi | Best SEO Agency | Synzephyr",
+    title: "Best SEO Services in Pollachi",
     description: "Looking for the best SEO services in Pollachi? Synzephyr Technologies helps local businesses rank #1 on Google with proven SEO strategies. Get more leads, more calls, and more sales. Free audit!",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/seo-services-pollachi",

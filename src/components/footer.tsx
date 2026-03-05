@@ -11,7 +11,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="flex items-center gap-2 mb-4">
-                            <Image src="/logo.webp" alt="Synzephyr Technologies – Digital Marketing Agency Pollachi" width={160} height={45} className="h-10 w-auto" loading="lazy" />
+                            <Image src="/logo.webp" alt="Synzephyr Technologies – Digital Marketing Agency Pollachi" width={100} height={100} className="h-10 w-auto max-w-[100px]" loading="lazy" />
                             <span className="font-bold text-lg">Synzephyr Technologies</span>
                         </Link>
                         <p className="mt-4 text-sm text-muted-foreground">
@@ -96,32 +96,36 @@ export function Footer() {
                                     Contact
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/connect" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                                    Connect With Us
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="text-sm font-semibold tracking-wider uppercase text-foreground">Contact</h3>
-                        <ul className="mt-4 space-y-2">
+                        <ul className="mt-4 space-y-4">
                             <li className="flex items-start">
-                                <MapPin className="h-5 w-5 text-muted-foreground mr-2 shrink-0 mt-0.5" />
-                                <address className="text-sm text-muted-foreground not-italic">
+                                <MapPin className="h-5 w-5 text-muted-foreground mr-3 shrink-0 mt-0.5" />
+                                <address className="text-sm text-muted-foreground not-italic leading-relaxed">
                                     Pollachi, Coimbatore District,<br />
                                     Tamil Nadu – 642001, India
                                 </address>
                             </li>
-                            <li className="flex items-center">
-                                <Phone className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
-                                <a href="tel:+919443449557" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                            <li className="flex items-start">
+                                <Phone className="h-5 w-5 text-muted-foreground mr-3 shrink-0 mt-0.5" />
+                                <a href="tel:+919443449557" className="text-sm text-muted-foreground hover:text-primary transition-colors py-0.5">
                                     +91 94434 49557
                                 </a>
                             </li>
-                            <li className="flex items-center">
-                                <Mail className="h-5 w-5 text-muted-foreground mr-2 shrink-0" />
-                                {/* Email obfuscated via HTML entities to deter scrapers */}
+                            <li className="flex items-start">
+                                <Mail className="h-5 w-5 text-muted-foreground mr-3 shrink-0 mt-0.5" />
                                 <a
                                     href="#email"
                                     onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "contact.synzephyr" + "@" + "gmail.com"; }}
-                                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                                    className="text-sm text-muted-foreground hover:text-primary transition-colors py-0.5"
                                     aria-label="Email Synzephyr Technologies"
                                 >
                                     contact.synzephyr&#64;gmail&#46;com

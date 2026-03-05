@@ -9,13 +9,13 @@ import { ModeToggle } from "./mode-toggle"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
-    { name: "Connect", href: "/connect" },
+    { name: "Home", href: "/", ariaLabel: "Synzephyr Technologies Homepage" },
+    { name: "About", href: "/about", ariaLabel: "About Synzephyr Technologies" },
+    { name: "Services", href: "/services", ariaLabel: "Our Digital Marketing Services" },
+    { name: "Portfolio", href: "/portfolio", ariaLabel: "Our Client Portfolio" },
+    { name: "Blog", href: "/blog", ariaLabel: "Digital Marketing Blog" },
+    { name: "Contact", href: "/contact", ariaLabel: "Contact Synzephyr Technologies" },
+    { name: "Connect", href: "/connect", ariaLabel: "Connect With Us on Social Media" },
 ]
 
 export function Navbar() {
@@ -31,7 +31,7 @@ export function Navbar() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
-                        <Image src="/logo.webp" alt="Synzephyr Technologies" width={140} height={35} className="h-8 w-auto" />
+                        <Image src="/logo.webp" alt="Synzephyr Technologies" width={80} height={80} className="h-8 w-auto max-w-[80px]" />
                         <span className="font-bold text-sm sm:text-lg">Synzephyr Technologies</span>
                     </Link>
 
@@ -42,6 +42,7 @@ export function Navbar() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
+                                    aria-label={item.ariaLabel}
                                     className={cn(
                                         "relative px-3 py-2 text-sm font-medium transition-colors hover:text-primary",
                                         pathname === item.href
@@ -92,6 +93,7 @@ export function Navbar() {
                         <Link
                             key={item.name}
                             href={item.href}
+                            aria-label={item.ariaLabel}
                             className={cn(
                                 "block px-3 py-2 rounded-md text-base font-medium transition-colors",
                                 pathname === item.href
