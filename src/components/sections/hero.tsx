@@ -17,7 +17,7 @@ export function Hero() {
                             />
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/logo.png"
+                                src="/logo.webp"
                                 alt="Synzephyr Technologies – Digital Marketing Agency in Pollachi"
                                 width={300}
                                 height={300}

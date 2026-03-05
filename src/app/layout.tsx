@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -50,10 +49,6 @@ export const metadata: Metadata = {
     "graphic design Pollachi",
     "local SEO Tamil Nadu",
   ],
-  // Note: canonical is intentionally NOT set at layout level.
-  // Each individual page sets its own correct canonical URL via alternates.canonical.
-  // A layout-level canonical would be inherited by all pages, pointing them all to the
-  // homepage — which is incorrect and the exact issue SEO tools flag.
   robots: {
     index: true,
     follow: true,
@@ -109,12 +104,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Resource hints — establish early connections to critical third-party origins */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://stats.g.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
         {/* Preload LCP image — the hero logo is the first visible branded element */}
         <link
           rel="preload"
@@ -127,7 +124,29 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground transition-colors duration-300`}
       >
-        <GoogleTagManager gtmId="GTM-MGN73MG5" />
+        {/* Google Tag Manager (GTM) — Manual implementation to avoid "preloaded but not used" warnings */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-MGN73MG5');
+            `,
+          }}
+        />
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MGN73MG5"
+            height="0"
+            width="0"
+            className="hidden invisible"
+          />
+        </noscript>
+
         {/* Facebook Pixel — deferred until after hydration, zero LCP impact */}
         <Script
           id="fb-pixel"
@@ -157,6 +176,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

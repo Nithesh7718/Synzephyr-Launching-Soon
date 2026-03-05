@@ -37,18 +37,12 @@
             "sizes": "1280x1280",
             "type": "image/webp",
             "purpose": "any"
-        },
-        {
-            "src": "/logo.png",
-            "sizes": "1280x1280",
-            "type": "image/png",
-            "purpose": "any maskable"
         }
     ],
     "screenshots": [
         {
-            "src": "/logo.png",
-            "type": "image/png",
+            "src": "/logo.webp",
+            "type": "image/webp",
             "sizes": "1280x1280",
             "form_factor": "wide",
             "label": "Synzephyr Technologies – Digital Marketing Agency in Pollachi"
