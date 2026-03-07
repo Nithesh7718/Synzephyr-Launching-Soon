@@ -9,11 +9,10 @@ export default function robots(): MetadataRoute.Robots {
         rules: [
             {
                 userAgent: '*',
-                allow: ['/', '/sitemap.xml', '/robots.txt'],
+                allow: '/',
                 disallow: ['/private/'],
             },
         ],
         sitemap: `${baseUrl}/sitemap.xml`,
-        host: baseUrl,
     }
 }
