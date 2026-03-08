@@ -6,25 +6,25 @@ import Link from "next/link"
 const services = [
     {
         title: "SEO Optimization",
-        description: "Dominate search results with our advanced SEO strategies. We focus on ranking your business specifically for high-intent keywords in Pollachi and Coimbatore, ensuring a consistent flow of organic traffic and local leads to your website.",
+        description: "Dominate search results with our global SEO experts. We scale your business with high-intent keywords and international ranking strategies, driving organic growth from Coimbatore to the US.",
         icon: Search,
         href: "/seo-services-pollachi",
     },
     {
         title: "Digital Marketing",
-        description: "Reach your audience where they spend their time. Our comprehensive digital marketing service includes expert management of Facebook, Instagram, and Google Ads, specifically designed to increase brand awareness for businesses across Tamil Nadu.",
+        description: "As a premier digital marketing agency, we offer professional social media management and high-ROI ad campaigns (Facebook, Instagram, Google Ads) for global brands and startups.",
         icon: Globe,
         href: "/digital-marketing-pollachi",
     },
     {
         title: "Graphic Design",
-        description: "Convert visitors into customers with professional visual storytelling. From premium logo design and brand identity to engaging social media creatives and high-quality print materials, we make your business stand out in the competitive Pollachi market.",
+        description: "Our creative graphic design studio delivers professional logo design and corporate branding worldwide. We build visual identities that command authority in international markets.",
         icon: Palette,
         href: "/graphic-design-services-pollachi",
     },
     {
         title: "GMB Optimization",
-        description: "Be the first business customers see on Google Maps. We optimize your Google Business Profile (GMB) to rank in the Local 3-Pack, driving immediate phone calls, walk-in traffic, and trust from customers searching for local services in Pollachi.",
+        description: "Local dominance combined with global standards. We optimize your Google Business Profile to rank in the Local 3-Pack, driving immediate calls and trust from local customers and global searchers.",
         icon: MapPin,
         href: "/google-business-profile-setup-pollachi",
     },

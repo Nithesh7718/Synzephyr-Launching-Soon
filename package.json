@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "npm run build && firebase deploy",
+    "indexnow": "curl -X POST https://us-central1-synzephyrtechnologies.cloudfunctions.net/notifyIndexNow"
   },
   "dependencies": {
     "@googlemaps/extended-component-library": "^0.6.14",

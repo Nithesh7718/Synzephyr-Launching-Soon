@@ -29,10 +29,10 @@ export function Hero() {
                         </picture>
                     </div>
                     <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 pb-2">
-                        Global Digital Solutions for High-Growth Brands
+                        Synzephyr Technologies Worldwide
                     </h1>
                     <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                        Elevate your business with data-driven SEO, cutting-edge digital marketing, and strategic growth campaigns delivered worldwide.
+                        Your global partner for <strong>expert SEO</strong>, <strong>social media management</strong>, and <strong>high-intent digital marketing</strong>. Scaling brands with data-driven strategies across the globe.
                     </p>
                 </div>
                 <div className="mx-auto mt-8 flex w-full max-w-sm flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 animate-fade-in-up delay-200">

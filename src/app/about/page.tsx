@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Users, Target, Rocket } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "About Us | Digital Marketing Agency in Pollachi",
+    title: "About Synzephyr Technologies | Digital Marketing Agency",
     description: "Synzephyr Technologies is a global digital marketing agency helping businesses scale through expert SEO, GMB optimization, and data-driven growth strategies.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/about",
@@ -16,7 +16,7 @@ export default function AboutPage() {
             {/* Hero Section */}
             <section className="bg-muted/30 py-20 text-center">
                 <div className="container px-4 md:px-6 mx-auto">
-                    <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-6">About Synzephyr</h1>
+                    <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-6">About Synzephyr Technologies</h1>
                     <p className="mx-auto max-w-[700px] text-muted-foreground text-lg md:text-xl">
                         We are a team of passionate digital experts committed to transforming local businesses into global brands.
                     </p>
@@ -70,9 +70,9 @@ export default function AboutPage() {
             {/* Expansion Vision */}
             <section className="py-20">
                 <div className="container px-4 md:px-6 mx-auto bg-primary/5 dark:bg-primary/10 rounded-3xl p-8 md:p-12 text-center">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">Looking Ahead</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">Serving the World Online</h2>
                     <p className="mx-auto max-w-[800px] text-muted-foreground text-lg">
-                        While our roots are in Pollachi and Coimbatore, our vision is global. We are constantly expanding our capabilities and reach to serve clients across India and internationally, bringing world-class digital strategies to businesses of all sizes.
+                        While our physical Headquarters are in <strong>Pollachi</strong> and <strong>Coimbatore</strong>, Synzephyr Technologies is an online-first agency. We leverage modern collaboration tools to provide world-class digital strategies to businesses across India and internationally.
                     </p>
                 </div>
             </section>
