@@ -57,8 +57,12 @@ export function AboutSummary() {
                             transition={{ delay: 0.3 }}
                             className="flex flex-col sm:flex-row gap-4 pt-4"
                         >
-                            <Link href="/about" className="group inline-flex h-14 items-center justify-center rounded-full bg-primary px-10 text-base font-bold text-primary-foreground shadow-xl transition-all hover:scale-105 hover:bg-primary/90">
-                                Learn More 
+                            <Link 
+                                href="/about" 
+                                className="group inline-flex h-14 items-center justify-center rounded-full bg-primary px-10 text-base font-bold text-primary-foreground shadow-xl transition-all hover:scale-105 hover:bg-primary/90"
+                                aria-label="Learn More About Synzephyr Technologies"
+                            >
+                                Learn More About Synzephyr
                                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                             </Link>
                             <Link href="/contact" className="inline-flex h-14 items-center justify-center rounded-full border border-border bg-background px-10 text-base font-bold hover:bg-muted transition-all">

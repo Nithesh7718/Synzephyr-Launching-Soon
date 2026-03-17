@@ -4,6 +4,8 @@ import { Search, Globe, Palette, MapPin, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import type { Variants } from "framer-motion"
+import { useEffect } from "react"
+import { performanceMark } from "@/lib/performance"
 
 const services = [
     {
@@ -59,6 +61,9 @@ const itemVariants: Variants = {
 }
 
 export function ServicesSection() {
+    useEffect(() => {
+        performanceMark("services-mounted")
+    }, [])
     return (
         <section className="py-24 relative overflow-hidden">
             <div className="container px-4 md:px-6 mx-auto relative z-10">
@@ -113,8 +118,9 @@ export function ServicesSection() {
                             <Link
                                 href={service.href}
                                 className="inline-flex items-center text-primary font-bold text-sm tracking-wide group/link uppercase"
+                                aria-label={`Learn more about ${service.title}`}
                             >
-                                Learn more
+                                Learn more about {service.title}
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-1.5" />
                             </Link>
                         </motion.div>

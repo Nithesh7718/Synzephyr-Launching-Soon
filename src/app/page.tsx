@@ -1,20 +1,21 @@
 import type { Metadata } from "next"
+import dynamic from "next/dynamic"
 import { Hero } from "@/components/sections/hero"
 import { ServicesSection } from "@/components/sections/services-section"
-import { WhyChooseUs } from "@/components/sections/why-choose-us"
-import { Process } from "@/components/sections/process"
-import { FAQ } from "@/components/sections/faq"
 
-import { CTA } from "@/components/sections/cta"
-import { IndustryExpertise } from "@/components/sections/industry-expertise"
-import { AboutSummary } from "@/components/sections/about-summary"
-import { LocationFocus } from "@/components/sections/location-focus"
+const IndustryExpertise = dynamic(() => import("@/components/sections/industry-expertise").then(mod => mod.IndustryExpertise))
+const WhyChooseUs = dynamic(() => import("@/components/sections/why-choose-us").then(mod => mod.WhyChooseUs))
+const Process = dynamic(() => import("@/components/sections/process").then(mod => mod.Process))
+const AboutSummary = dynamic(() => import("@/components/sections/about-summary").then(mod => mod.AboutSummary))
+const LocationFocus = dynamic(() => import("@/components/sections/location-focus").then(mod => mod.LocationFocus))
+const FAQ = dynamic(() => import("@/components/sections/faq").then(mod => mod.FAQ))
+const CTA = dynamic(() => import("@/components/sections/cta").then(mod => mod.CTA))
 
 export const metadata: Metadata = {
   title: "Synzephyr Technologies | Global Digital Growth & Marketing Agency",
   description: "Synzephyr Technologies is a global digital growth agency. Scale your brand worldwide with our expert SEO, digital marketing, and high-performance strategies.",
   alternates: {
-    canonical: "https://synzephyrtechnologies.web.app",
+    canonical: "https://synzephyrtechnologies.web.app/",
   },
   openGraph: {
     title: "Global Digital Growth & Marketing Agency | Synzephyr",
@@ -45,7 +46,7 @@ const websiteJsonLd = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
@@ -60,7 +61,7 @@ export default function Home() {
       <LocationFocus />
       <FAQ />
       <CTA />
-    </div>
+    </>
   )
 }
 

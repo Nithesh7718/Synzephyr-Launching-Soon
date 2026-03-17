@@ -4,11 +4,11 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://synzephyrtechnologies.web.app'
-    const lastMod = new Date()
+    const lastMod = new Date().toISOString().split('T')[0]
 
     return [
         {
-            url: baseUrl,
+            url: `${baseUrl}/`,
             lastModified: lastMod,
             changeFrequency: 'weekly',
             priority: 1.0,

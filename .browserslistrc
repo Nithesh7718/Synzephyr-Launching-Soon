@@ -1,0 +1,7 @@
+# Target modern browsers that support ES2022+ features natively
+# This helps remove legacy polyfills mentioned in Lighthouse audits (at, hasOwn, flat, etc.)
+
+last 2 versions
+not dead
+not IE 11
+> 1%

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
+import { ThirdPartyScripts } from "@/components/third-party-scripts";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -9,11 +9,13 @@ import { Footer } from "@/components/footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const viewport: Viewport = {
@@ -24,19 +26,19 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://synzephyrtechnologies.web.app"),
+  metadataBase: new URL("https://synzephyrtechnologies.web.app/"),
   title: {
     default: "Synzephyr Technologies | Global Digital Growth Agency",
     template: "%s | Synzephyr Technologies",
   },
   description: "Worldwide digital marketing agency specializing in high-performance SEO, global brand growth, and data-driven marketing strategies for businesses everywhere.",
   alternates: {
-    canonical: "https://synzephyrtechnologies.web.app",
+    canonical: "https://synzephyrtechnologies.web.app/",
     languages: {
-      "en": "https://synzephyrtechnologies.web.app",
-      "en-IN": "https://synzephyrtechnologies.web.app",
-      "en-US": "https://synzephyrtechnologies.web.app",
-      "en-GB": "https://synzephyrtechnologies.web.app",
+      "en": "https://synzephyrtechnologies.web.app/",
+      "en-IN": "https://synzephyrtechnologies.web.app/",
+      "en-US": "https://synzephyrtechnologies.web.app/",
+      "en-GB": "https://synzephyrtechnologies.web.app/",
     },
   },
   keywords: [
@@ -157,16 +159,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Resource hints — establish early connections to critical third-party origins */}
-        <link rel="preconnect" href="https://www.google-analytics.com" />
-        <link rel="preconnect" href="https://stats.g.doubleclick.net" />
-        <link rel="preconnect" href="https://connect.facebook.net" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" href="https://stats.g.doubleclick.net" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
-        {/* Preload LCP image — the hero logo is the first visible branded element */}
+        {/* Preload critical assets first */}
         <link
           rel="preload"
           as="image"
@@ -174,49 +167,20 @@ export default function RootLayout({
           type="image/webp"
           fetchPriority="high"
         />
+
+        {/* Resource hints — establish early connections to critical third-party origins */}
+        {/* Only preconnect to absolute essentials; use dns-prefetch for the rest to avoid Lighthouse warnings */}
+        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://stats.g.doubleclick.net" />
+        <link rel="dns-prefetch" href="https://www.facebook.com" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground transition-colors duration-300`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        {/* Google Tag Manager (GTM) — Manual implementation to avoid "preloaded but not used" warnings */}
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-MGN73MG5');
-            `,
-          }}
-        />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MGN73MG5"
-            height="0"
-            width="0"
-            className="hidden invisible"
-          />
-        </noscript>
-
-        {/* Facebook Pixel — deferred until after hydration, zero LCP impact */}
-        <Script
-          id="fb-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-              n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-              document,'script','https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init','1808210129731692');
-              fbq('track','PageView');
-            `,
-          }}
-        />
+        <ThirdPartyScripts />
 
         <ThemeProvider
           attribute="class"
