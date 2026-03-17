@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Privacy Policy | Synzephyr Technologies",
+    title: "Privacy Policy",
     description: "Privacy Policy for Synzephyr Technologies usage.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/privacy-policy",

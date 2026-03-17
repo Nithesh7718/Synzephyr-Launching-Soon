@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://synzephyrtechnologies.web.app"),
   title: {
-    default: "Synzephyr Technologies | Global Digital Growth & Marketing Agency",
+    default: "Synzephyr Technologies | Global Digital Growth Agency",
     template: "%s | Synzephyr Technologies",
   },
   description: "Worldwide digital marketing agency specializing in high-performance SEO, global brand growth, and data-driven marketing strategies for businesses everywhere.",
@@ -110,7 +110,7 @@ export const metadata: Metadata = {
     google: "JBxZnbNTUf5G2DrRxX9wTMrLPp6EIE2ktdPFqqqUSP0",
     yandex: "2d6da97078bb3c50",
     other: {
-      "msvalidate.01": ["YOUR_BING_VERIFICATION_ID"], // Standard Bing validation tag
+      "msvalidate.01": "9e3a6c11f4d84c62b5d7e82b7c6c4493", // Actual Bing validation ID
     },
   },
   openGraph: {
@@ -142,7 +142,7 @@ export const metadata: Metadata = {
     "revisit-after": "1 days",
     "distribution": "global",
     "rating": "General",
-    "p:domain_verify": "YOUR_PINTEREST_VERIFICATION_CODE", // Optional but good for Pinterest
+    "p:domain_verify": "YOUR_PINTEREST_VERIFICATION_CODE",
     "bingbot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   },
 };

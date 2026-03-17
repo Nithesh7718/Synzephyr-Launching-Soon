@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Search, Globe, Palette, MapPin, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Global Digital Growth & SEO Services",
+    title: "Global SEO & Digital Growth Services",
     description: "Scale your brand with Synzephyr's worldwide digital solutions: International SEO, performance marketing, and high-ROI digital growth strategies.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/services",

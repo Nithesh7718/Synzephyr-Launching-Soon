@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Terms of Service | Synzephyr Technologies",
+    title: "Terms of Service",
     description: "Terms of Service for Synzephyr Technologies usage.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/terms",

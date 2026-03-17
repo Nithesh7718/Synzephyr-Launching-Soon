@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Users, Target, Rocket } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "About Synzephyr Technologies | Digital Marketing Agency",
+    title: "About Us",
     description: "Synzephyr Technologies is a global digital marketing agency helping businesses scale through expert SEO, GMB optimization, and data-driven growth strategies.",
     alternates: {
         canonical: "https://synzephyrtechnologies.web.app/about",
