@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    optimizeCss: true, // Requires 'critters' library
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
 };

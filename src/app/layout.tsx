@@ -158,15 +158,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Preload critical assets first */}
-        <link
-          rel="preload"
-          as="image"
-          href="/logo-300.webp"
-          type="image/webp"
-          fetchPriority="high"
-        />
-
         {/* Resource hints — establish early connections to critical third-party origins */}
         {/* Only preconnect to absolute essentials; use dns-prefetch for the rest to avoid Lighthouse warnings */}
         <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="anonymous" />
